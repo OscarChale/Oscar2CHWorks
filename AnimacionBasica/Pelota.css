@@ -1,0 +1,56 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(28, 30, 36) ;
+}
+
+/*Caja que limita el movimeinto de la pelota*/
+.fondo{
+    background-color:rgb(207, 110, 143);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.pelota{
+    background-color:rgb(172, 158, 158);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 100px;
+    left: 220px;
+
+    animation: bounce .9s infinite;
+}
+@keyframes bounce{
+    10%{
+        height: 50px;
+        width: 50px;
+    }
+    30%{
+        height: 50px;
+        width: 50px;
+      
+    }
+    50%{
+        height: 50px;
+        width: 50px;
+        transform: translateY(240px);
+    }
+    70%{
+        height: 50px;
+        width: 50px;
+      
+    }
+    100%{
+        height: 50px;
+        width: 50px;
+      
+    }
+  
+}
